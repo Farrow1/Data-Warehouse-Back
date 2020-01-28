@@ -1,9 +1,6 @@
 name: CI
 
-on: [
-  pull-request:
-    branches: -master  
-]
+on: pull-request: branches: -master
 
 jobs:
   build:
