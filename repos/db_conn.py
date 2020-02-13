@@ -1,7 +1,6 @@
 from sqlalchemy.engine import url, create_engine
 from sqlalchemy.orm import sessionmaker
 import sqlalchemy
-import yaml
 
 db_url = url.URL(
     drivername='py',

@@ -1,11 +1,11 @@
 from flask import Flask
-from db_repos import default
+
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/test', methods=['GET'])
 def defaultone():
-    return default()
+    return "Loren ipsum dolor sit amet"
 
 if __name__ == '__main__':
     app.run()
