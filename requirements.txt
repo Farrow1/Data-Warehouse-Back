@@ -1,5 +1,2 @@
 sqlalchemy
-<<<<<<< HEAD
-=======
-flask
->>>>>>> refs/remotes/origin/Jack-Dev
+Flask==1.1.1
