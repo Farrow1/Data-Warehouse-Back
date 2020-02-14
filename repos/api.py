@@ -7,5 +7,3 @@ app = Flask(__name__)
 def test():
     return "Loren ipsum dolor sit amet"
 
-if __name__ == '__main__':
-    app.run()
