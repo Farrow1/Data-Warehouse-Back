@@ -1,6 +1,7 @@
 from flask import Flask
-from repos.classes import Customer, Agents, Loan, Transaction, Accounts, Card
-from repos.db_conn import test
+#from repos.classes import Customer, Agents, Loan, Transaction, Accounts, Card
+
+#from repos.db_conn import test
 
 app = Flask(__name__)
 
@@ -10,5 +11,5 @@ def hello():
 
 @app.route("/test", methods=['GET'])
 def testtwo():
-    return test
+    return "Is this working"
 
