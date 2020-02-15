@@ -1,4 +1,4 @@
-from db_conn import session
+from repos.db_conn import session
 from sqlalchemy import Column, Integer, String, Float, Boolean, Date
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -7,13 +7,15 @@ Base = declarative_base()
 class Customer(Base):
     __tablename__ = 'Customer'
 
+    customer_Id = Column(Integer, primary_key=True)
     firstName = Column(String)
     lastName = Column(String)
     phone = Column(Integer)
     address = Column(String)
     accountID = Column(Integer)
 
-    def __init__(self, firstName, lastName, phone, address, accountID):
+    def __init__(self, customer_Id, firstName, lastName, phone, address, accountID):
+        self.customer_Id = customer_Id
         self.firstName = firstName
         self.lastName = lastName
         self.phone = phone
