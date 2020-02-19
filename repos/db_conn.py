@@ -15,7 +15,7 @@ database='datawarehouse'
 username = 'allenj25'
 password = 'Jack1998'
 driver = '{ODBC Driver 13 for SQL Server}'
-cnxn = ('DRIVER= ' + driver + ';SERVER='+server+',1433;DATABASE='+database+';UID='+username+';PWD='+password)
+cnxn = ('DRIVER=' + driver + ';SERVER='+server+',1433;DATABASE='+database+';UID='+username+';PWD='+password)
 
 connect_str = 'mssql+pyodbc:///?odbc_connect=' + urllib.parse.quote_plus(cnxn) + "?driver=SQL+Server"
 engine = create_engine(connect_str)
