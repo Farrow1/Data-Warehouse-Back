@@ -8,19 +8,19 @@ class Customer(Base):
     __tablename__ = 'Customer'
 
     customer_Id = Column(Integer, primary_key=True)
-    firstName = Column(String)
-    lastName = Column(String)
+    first_name = Column(String)
+    last_name = Column(String)
     phone = Column(Integer)
     address = Column(String)
-    accountID = Column(Integer)
+    agent_id= Column(Integer)
 
-    def __init__(self, customer_Id, firstName, lastName, phone, address, accountID):
+    def __init__(self, customer_Id, first_name, last_name, phone, address, agent_id):
         self.customer_Id = customer_Id
-        self.firstName = firstName
-        self.lastName = lastName
+        self.firstName = first_name
+        self.lastName = last_name
         self.phone = phone
         self.address = address
-        self.accountID = accountID
+        self.agent_id = agent_id
 
 class Accounts(Base):
     __tablename__ = 'Accounts'
